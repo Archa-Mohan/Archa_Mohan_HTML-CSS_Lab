@@ -1,0 +1,78 @@
+h2 {
+  text-align: center;
+  color: black;
+}
+.signin {
+  color: white;
+  width: 500px;
+  padding: 10px;
+  position: absolute;
+  font-size: 20px;
+  top: 25%;
+  left: 30%;
+  line-height: 50px;
+  border-radius: 10px;
+  background: transparent;
+  text-align: left;
+  vertical-align: middle;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+form {
+  text-align: center;
+}
+input {
+  height: 30px;
+  width: 70%;
+  padding-left: 10px;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: medium;
+}
+
+input:focus {
+  outline: none;
+  opacity: 0.35;
+  background-color: steelblue;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  vertical-align: middle;
+  font-size: large;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(171, 95, 243);
+  color: white;
+}
+
+button + button {
+  margin-left: 50px;
+}
+
+#myVideo {
+  position: fixed;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 0;
+}
+
+::placeholder {
+  color: darkgrey;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: darkgrey;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: darkgrey;
+}

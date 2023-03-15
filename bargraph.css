@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 500px;
+  background-color: #f6f6f6;
+  display: flex;
+}
+
+.box .skill {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  width: 30px;
+  height: 80%;
+  color: white;
+  bottom: 10px;
+  top: 50px;
+}
+
+.box .skill .graph {
+  position: absolute;
+  width: 30px;
+  background-color: white;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+}
+
+.skill .graph .percent {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  transform: translateX(-50%);
+  background-color: rgb(214, 211, 211);
+  width: 30px;
+}
+
+.box .skill .name {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 2px;
+  color: black;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  text-align: center;
+  padding: 2px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+@keyframes animated-bar-one {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 30%;
+  }
+}
+
+.bar-one {
+  animation: cubic-bezier(0.42, 0, 0.58, 1) animated-bar-one 5s;
+}
+
+@keyframes animated-bar-two {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40%;
+  }
+}
+
+.bar-two {
+  animation: cubic-bezier(0.42, 0, 0.58, 1) animated-bar-two 5s;
+}
+
+@keyframes animated-bar-three {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 80%;
+  }
+}
+
+.bar-three {
+  animation: cubic-bezier(0.42, 0, 0.58, 1) animated-bar-three 5s;
+}
